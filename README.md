@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project focuses on processing ECG signals using analog  filtering techniques. The system includes amplification, phase shifting, and multiple filtering stages, including a median filter, notch filter, high-pass filter, and low-pass filter. These components work together to enhance signal clarity and remove noise for accurate ECG analysis.
+This project focuses on processing ECG signals using analog  filtering techniques. The system includes amplification, phase shifting, and multiple filtering stages, including a median filter, notch filter, high-pass filter, and low-pass filter. These components work together to enhance signal clarity and remove noise for accurate ECG analysis. For more details about the project, checkout this [report](https://docs.google.com/document/d/1m3WGtXcJivpxO5Qh31EQCQH-g_JgQbG-oU1WNG2gprk/edit?tab=t.0)
 
 ## Problem Statement
 
