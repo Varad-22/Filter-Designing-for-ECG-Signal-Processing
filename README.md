@@ -10,21 +10,21 @@ ECG signals are highly susceptible to noise from power lines, muscle activity, a
 
 ## Solution
 
-1. The signal processing pipeline involves the following steps:
+### The signal processing pipeline involves the following steps:
 
-2. Simulating the ECG signal and adding noise:
+#### Simulating the ECG signal and adding noise:
 
-3. ECG data is generated and converted into a .txt file using a Python script.
+1.  ECG data is generated and converted into a .txt file using a Python script.
+   
+2.  Noise (White Gaussian Noise) is introduced in LTSpice using a behavioral voltage component.
 
-4. Noise (White Gaussian Noise) is introduced in LTSpice using a behavioral voltage component.
+### Amplification and Phase Shifting:
 
-5. Amplification and Phase Shifting:
+1. The raw ECG signals are amplified using non-inverting op-amp circuits (gain ≈ 1000).
 
-6. The raw ECG signals are amplified using non-inverting op-amp circuits (gain ≈ 1000).
+2. All-pass filters are used to phase-shift the signals to generate multiple delayed versions for median filtering.
 
-7. All-pass filters are used to phase-shift the signals to generate multiple delayed versions for median filtering.
-
-## Filtering and Noise Reduction:
+### Filtering and Noise Reduction:
 
 1. Median Filter: This custom-built analog filter takes in five phase-shifted inputs and outputs the median value, effectively removing impulsive noise while preserving waveform integrity. Either we can use a median filter with 5 to 7 inputs, and it gives the same results as using low-pass, notch, and high-pass filters combined.
 
